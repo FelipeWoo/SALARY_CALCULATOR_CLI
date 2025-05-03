@@ -158,10 +158,10 @@ $$
 * **Relative error**:
 
 $$
-\frac{16}{50,000} × 100 = \boxed{0.032\%}
+\frac{16}{50,000} × 100 = \text{0.032\%} 
 $$
 
-✅ Practically negligible error → high accuracy.
+> ✅ Practically negligible error → high accuracy.
 
 ---
 
