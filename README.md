@@ -172,8 +172,8 @@ $$
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/FelipeWoo/salary-converter.git
-cd salary-converter
+git clone https://github.com/FelipeWoo/SALARY_CALCULATOR_CLI.git
+cd SALARY_CALCULATOR_CLI
 ```
 
 ---
