@@ -137,7 +137,7 @@ HOURS_PER_UNIT = {
 
 > 16 / 50,000 × 100 = 0.032%
 
-> ✅ Practically negligible error → high accuracy.
+> ✓ Practically negligible error → high accuracy.
 
 ---
 
