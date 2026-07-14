@@ -1,4 +1,6 @@
-# Annual Work Time Calculation (Realistic Average Model)
+# Salary Calculator CLI
+
+A Python command-line application that normalizes salaries across time units and converts them between currencies using current exchange rates from the [Frankfurter API](https://www.frankfurter.app/).
 
 ## Objective
 
@@ -166,14 +168,19 @@ $$
 ---
 
 
-## How to Load `pyproject.toml` and Recreate the Environment with `uv`
+## Installation and Usage
 
+### Requirements
+
+* Python 3.12 or newer
+* [`uv`](https://docs.astral.sh/uv/)
+* `make` (optional, for the convenience commands below)
 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/FelipeWoo/SALARY_CALCULATOR_CLI.git
-cd SALARY_CALCULATOR_CLI
+git clone https://github.com/FelipeWoo/salary-calculator-cli.git
+cd salary-calculator-cli
 ```
 
 ---
@@ -188,19 +195,21 @@ curl -Ls https://astral.sh/uv/install.sh | sh
 ---
 
 
-### 3. Recreate the environment using `uv`
+### 3. Install the project
 
-Make sure you have [`uv`](https://github.com/astral-sh/uv) installed. Then run:
+Install the exact dependencies recorded in `uv.lock`:
 
 ```bash
-uv venv
-uv pip install .
+uv sync --locked
 ```
 
-This will:
+Alternatively, use the included `Makefile`:
 
-* Create a `.venv` folder (your isolated Python environment)
-* Install the project dependencies defined in `pyproject.toml`
+```bash
+make install
+```
+
+This creates a `.venv` directory and installs the project dependencies.
 
 ---
 
@@ -219,12 +228,34 @@ source .venv/bin/activate      # Linux/macOS
 uv run python main.py
 ```
 
+Or:
+
+```bash
+make run
+```
+
 You will be prompted to enter:
 
 * The salary amount
 * The time unit (minute, hour, day, etc.)
 * The source currency (e.g., USD)
 * The target currency (e.g., MXN)
+
+---
+
+## Development Commands
+
+```bash
+make help     # List available commands
+make install  # Install locked dependencies
+make run      # Run the application
+make check    # Check Python syntax
+make clean    # Remove generated artifacts
+```
+
+## License
+
+This project is licensed under the MIT License. See [`LICENSE`](LICENSE) for details.
 
 ---
 
