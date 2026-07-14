@@ -54,27 +54,19 @@ The program extracts the `rates[TO]` value and calculates the conversion rate, s
 * Total working weeks per year: **52**
 * Total working days per year:
 
-$$
-52 \text{ weeks} × 5 \text{ days} = \boxed{260 \text{ working days}}
-$$
+> 52 weeks × 5 days = 260 working days
 
 * Total working hours per year:
 
-$$
-260 \text{ days} × 8 \text{ hours} = \boxed{2080 \text{ h/year}}
-$$
+> 260 days × 8 hours = 2080 h/year
 
 Also considering possible calendar variations:
 
-$$
-261 \text{ days} × 8 \text{ hours} = \boxed{2088 \text{ h/year}}
-$$
+> 261 days × 8 hours = 2088 h/year
 
 We use a more balanced value:
 
-$$
-\boxed{2084 \text{ h/year (average)}}
-$$
+> 2084 h/year (average)
 
 > 🔍 However, to improve precision, we use a **more accurate monthly average** based on this annual distribution.
 
@@ -88,33 +80,23 @@ Distributing the 260 working days across the 12 months of the Gregorian calendar
 If you assume 5 working days per week → 5 × 52 = 260
 ```
 
-$$
-\frac{260 \text{ working days}}{12 \text{ months}} = \boxed{21.6667 \text{ working days/month}}
-$$
+> 260 working days / 12 months = 21.6667 working days/month
 
 ```
 If you account for weekends → 365 - 104 = 261
 ```
 
-$$
-\frac{261 \text{ working days}}{12 \text{ months}} = \boxed{21.75 \text{ working days/month}}
-$$
+> 261 working days / 12 months = 21.75 working days/month
 
 Multiplied by 8 hours per day:
 
-$$
-21.6667 × 8 = \boxed{173.33 \text{ h/month}}
-$$
+> 21.6667 × 8 = 173.33 h/month
 
-$$
-21.75 × 8 = \boxed{174 \text{ h/month}}
-$$
+> 21.75 × 8 = 174 h/month
 
 Final average:
 
-$$
-\boxed{173.67 \text{ h/month (average)}}
-$$
+> 173.67 h/month (average)
 
 ---
 
@@ -139,29 +121,21 @@ HOURS_PER_UNIT = {
 
 1. Convert to hourly rate:
 
-$$
-0.40 × 60 = \boxed{24.00 \text{ USD/hour}}
-$$
+> 0.40 × 60 = 24.00 USD/hour
 
 2. Annual salary:
 
-$$
-24.00 × 2084 = \boxed{50,016.00 \text{ USD/year}}
-$$
+> 24.00 × 2084 = 50,016.00 USD/year
 
 3. Compared to a target annual salary of \$50,000 USD:
 
 * **Absolute error**:
 
-$$
-|50,000 - 50,016| = \boxed{16 \text{ USD}}
-$$
+> |50,000 - 50,016| = 16 USD
 
 * **Relative error**:
 
-$$
-\frac{16}{50,000} × 100 = \text{0.032\%} 
-$$
+> 16 / 50,000 × 100 = 0.032%
 
 > ✅ Practically negligible error → high accuracy.
 

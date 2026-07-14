@@ -13,7 +13,7 @@ run: ## Run the salary calculator
 	$(UV) run python main.py
 
 check: ## Check that the Python source compiles
-	$(UV) run python -m compileall -q main.py
+	$(UV) run python -m compileall -q main.py salary_calculator
 
 clean: ## Remove generated Python and build artifacts
 	rm -rf __pycache__ .pytest_cache .ruff_cache .mypy_cache build dist *.egg-info
